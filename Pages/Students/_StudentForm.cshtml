@@ -1,0 +1,22 @@
+﻿@model ContosoUniversity.Models.Student
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="LastName" class="form-label"></label>
+        <input asp-for="LastName" class="form-control" aria-describedby="LastNameHelp" />
+        <div id="LastNameHelp" class="form-text">Enter family/surname.</div>
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="FirstMidName" class="form-label"></label>
+        <input asp-for="FirstMidName" class="form-control" />
+        <span asp-validation-for="FirstMidName" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="EnrollmentDate" class="form-label"></label>
+        <input asp-for="EnrollmentDate" class="form-control" />
+        <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
+    </div>
+</div>
